@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <div className="bg-slate-50 pt-[116px] w-full">
       <div className="max-w-[1200px] mx-auto ">
-        <div className="flex justify-between  items-start">
+        <div className="sm:flex grid sm:justify-between justify-center  items-start flex-wrap gap-4">
           <Image src="/svg/logo2.svg" alt="logoNata" width={61} height={61} />
           <div className="grid gap-[22px]">
             <div className="text-blue-500 text-base font-bold">Services</div>

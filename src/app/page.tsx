@@ -10,14 +10,14 @@ export default function Home() {
     "customer5.svg",
   ];
   return (
-    <div className=" mt-[150px] overflow-hidden ">
+    <div className=" mt-[150px] overflow-hidden sm:p-0 p-2">
       {/* intro */}
       <div className="max-w-[1200px] mx-auto">
         <div className="w-full  grid gap-[30px]">
-          <div className="mx-auto max-w-[948px] text-center text-neutral-800 text-7xl font-bold ">
+          <div className="mx-auto max-w-[948px] text-center text-neutral-800 sm:text-7xl text-4xl font-bold ">
             Your trusted Software Development Partner
           </div>
-          <div className="mx-auto max-w-[723px] text-center text-stone-500 text-lg font-medium ">
+          <div className="mx-auto max-w-[723px] text-center text-stone-500 sm:text-lg text-sm font-medium ">
             We help people to grow their business by providing professional and
             powerful digital solution. Our skills and and experience have
             enabled sustainable growth for enterprises of all sizes
@@ -35,19 +35,19 @@ export default function Home() {
       </div>
       {/* end of intro */}
       {/* Build Exclusively*/}
-      <div className="max-w-[1440px] mx-auto">
+      <div className="max-w-[1440px] md:block hidden mx-auto">
         <div className="w-full  bg-indigo-600 rounded-2xl px-52 py-28 ">
           <div className="grid gap-5   pb-20">
             <div className="text-amber-200 text-sm font-bold">
               CUSTOMIZATION
             </div>
             <div className="flex justify-between flex-wrap gap-4">
-              <div className=" text-white text-6xl font-bold">
+              <div className=" text-white sm:text-6xl text-3xl font-bold">
                 Build
                 <br />
                 Exclusively
               </div>
-              <div className="max-w-[566px] text-gray-200 text-lg font-medium font-['DM Sans'] leading-7">
+              <div className="max-w-[566px] text-gray-200 sm:text-lg text-sm font-medium leading-7">
                 We are skilled at comprehending your specific needs and turning
                 them into efficient solutions that not only meet but also
                 surpass your expectations. Our dedication to customization and
@@ -129,13 +129,13 @@ export default function Home() {
       </div>
       {/*end of Build Exclusively*/}
       {/* Leadership and Teamwork */}
-      <div className="max-w-[1200px] mx-auto mt-[364px] ">
+      <div className="max-w-[1200px] mx-auto sm:mt-[364px] mt-24 ">
         <div className="text-blue-500 text-sm font-bold mb-6 max-[1042px]:text-center">
           AMAZINNG WOKRS
         </div>
         <div className="flex justify-between flex-wrap max-[1042px]:justify-center gap-4">
           <div className=" w-[426px] max-[1042px]:text-center">
-            <div className="text-neutral-800 text-6xl font-bold mb-5 ">
+            <div className="text-neutral-800 sm:text-6xl text-3xl font-bold mb-5 ">
               Leadership and Teamwork
             </div>
             <div className=" text-stone-500 text-base font-medium ">
@@ -247,7 +247,7 @@ export default function Home() {
           <div className="text-violet-500 text-sm font-bold leading-tight mb-6">
             STUNNING PRODUCT
           </div>
-          <div className="text-neutral-800 text-6xl font-bold mb-5 leading-[60px]">
+          <div className="text-neutral-800 sm:text-6xl text-3xl font-bold mb-5 leading-[60px]">
             Create Sensational Digital Products
           </div>
 
@@ -269,8 +269,8 @@ export default function Home() {
 
       {/*Here we share our process */}
       <div className="relative h-56">
-        <div className="w-full absolute top-[75px]">
-          <div className="flex justify-between max-w-[1440px] mx-auto ">
+        <div className="w-full absolute lg:top-[75px] sm:top-[150px] top-[50px]">
+          <div className="flex sm:justify-between justify-center gap-4 max-w-[1440px] mx-auto flex-wrap ">
             <Image
               src="/svg/process1.svg"
               alt="process1"
@@ -285,9 +285,9 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <div className="relative">
-            <div className=" text-center text-neutral-800 text-7xl font-bold">
+            <div className="w-[500px] text-center text-neutral-800 sm:text-7xl text-4xl font-bold">
               Here we share
               <br />
               our process
@@ -297,14 +297,14 @@ export default function Home() {
               alt="signature"
               width={112}
               height={108}
-              className="absolute top-[95px] left-[-60px]"
+              className="absolute sm:top-[95px] top-0 sm:left-[-60px] left-5 sm:scale-100 scale-50"
             />
             <Image
               src="/svg/star2.svg"
               alt="signature"
               width={46}
               height={46}
-              className="absolute bottom-[-50px] right-[-30px] "
+              className="absolute sm:bottom-[-50px] bottom-[-10px] sm:right-[-30px] right-16 sm:scale-100 scale-50"
             />
           </div>
         </div>
@@ -312,8 +312,10 @@ export default function Home() {
       <div className="max-w-[1440px] mx-auto flex   max-lg:flex-wrap lg:justify-between justify-center mt-28 items-start gap-4">
         <Image src="/svg/star.svg" alt="signature" width={72} height={72} />
         <div>
-          <div className=" text-slate-200 text-7xl font-bold mb-5">01</div>
-          <div className="max-w-96 min-w-72 text-neutral-800 text-6xl font-bold mb-6">
+          <div className=" text-slate-200 sm:text-7xl text-4xl font-bold mb-5">
+            01
+          </div>
+          <div className="max-w-96 min-w-72 text-neutral-800 sm:text-6xl text-3xl font-bold mb-6">
             Proof of concept
           </div>
           <div className="max-w-96 min-w-72 text-stone-500 text-base font-medium">
@@ -334,11 +336,13 @@ export default function Home() {
           </div>
         </div>
         <div>
-          <div className=" text-slate-200 text-7xl font-bold mb-5">02</div>
-          <div className="max-w-96 h-32 text-neutral-800 text-6xl font-bold mb-4">
+          <div className=" text-slate-200 sm:text-7xl text-4xl font-bold mb-5">
+            02
+          </div>
+          <div className="max-w-96 h-32 text-neutral-800 sm:text-6xl text-3xl font-bold mb-4">
             Prototype
           </div>
-          <div className="max-w-96 text-stone-500 text-base font-medium">
+          <div className="max-w-96 text-stone-500 sm:text-base text-sm font-medium">
             <span>
               Creating a prototype is a crucial stage in transforming an idea
               into a tangible concept.
@@ -359,8 +363,10 @@ export default function Home() {
           </div>
         </div>
         <div>
-          <div className=" text-slate-200 text-7xl font-bold mb-5 ">03</div>
-          <div className="max-w-96 h-32 text-neutral-800 text-6xl font-bold mb-4">
+          <div className=" text-slate-200 sm:text-7xl text-4xl font-bold mb-5 ">
+            03
+          </div>
+          <div className="max-w-96 h-32 text-neutral-800 sm:text-6xl text-3xl font-bold mb-4">
             MVP
           </div>
           <div className="max-w-96 text-stone-500 text-base font-medium">
@@ -404,7 +410,7 @@ export default function Home() {
           height={74}
           className="absolute top-40 right-12 "
         />
-        <div className="text-neutral-800 text-7xl font-bold mb-5">
+        <div className="text-neutral-800 sm:text-7xl text-4xl font-bold mb-5">
           Let’s build something
           <br />
           great together!
@@ -415,7 +421,7 @@ export default function Home() {
           <br />
           or lend a hand on an existing one.
         </div>
-        <div className="flex items-end gap-3 mb-[60px]">
+        <div className="flex items-end gap-3 mb-[60px] flex-wrap">
           <div className="flex mb-[10px]">
             {listCustomer?.map((e, index) => {
               return (
